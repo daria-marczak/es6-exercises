@@ -30,3 +30,6 @@ console.log(average(...grades));
 const data = [1, 4, "Iwona", false, "Nowak"];
 const [ , ,name, , lastName] = data;
 console.log (`${name} ${lastName}`);
+
+//third task with reduce method
+const average = (... param) => param.reduce((total, item) => total += item) / param.length;
