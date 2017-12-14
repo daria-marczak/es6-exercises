@@ -6,7 +6,7 @@ const sayHello = console.log(`${hello} ${world}`);
 
 
 // second task
-const multiply = (a,b = 1) => a * b;
+const multiply = (a, b = 1) => a * b;
 console.log(multiply(5, 2));
 
 
@@ -28,8 +28,8 @@ console.log(average(...grades));
 
 // fifth task
 const data = [1, 4, "Iwona", false, "Nowak"];
-const [ , ,name, , lastName] = data;
+const [, ,name, , lastName] = data;
 console.log (`${name} ${lastName}`);
 
 //third task with reduce method
-const average = (... param) => param.reduce((total, item) => total += item) / param.length;
+const average = (... param) => param.reduce((total, item) => total + item) / param.length;
